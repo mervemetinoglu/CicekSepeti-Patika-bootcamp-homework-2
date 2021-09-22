@@ -5,10 +5,6 @@ class Dog extends Animal {
     super(name, image, numberOfLegs);
     this.age = age;
   }
-
-  speak() {
-    console.log(`${this.name} barks.`);
-  }
 }
 
 export default Dog;
