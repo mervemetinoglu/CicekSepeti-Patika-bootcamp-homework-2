@@ -86,7 +86,7 @@ function displayCards() {
     .map((item, index) => {
       let random = Math.random();
       random += index;
-      console.log(item.image + random);
+
       return `
           <div class="grid__item">
               <div class="grid__item-img">
