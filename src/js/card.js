@@ -26,7 +26,7 @@ function displayCards() {
   const gridDOM = document.querySelector('.grid');
 
   const htmlStringCard = animalsList
-  .map((item, index) => {
+    .map((item, index) => {
       let random = Math.random();
       random += index;
 
