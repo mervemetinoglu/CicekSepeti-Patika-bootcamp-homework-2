@@ -1,8 +1,8 @@
 import Animal from './Animal';
 
 class Duck extends Animal {
-  constructor(name, image, numberOfLegs, age) {
-    super(name, image, numberOfLegs);
+  constructor(name, image, age) {
+    super(name, image, 2);
     this.age = age;
   }
 }
