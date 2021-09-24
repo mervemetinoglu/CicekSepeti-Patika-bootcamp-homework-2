@@ -2,13 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // production
+  mode: 'development',
   entry: {
     main: path.resolve(__dirname, 'src/js/index.js'),
   },
   devtool: 'inline-source-map',
   devServer: {
-    port: 5001, // default 8080
+    port: 5001,
     open: true,
     hot: true,
   },
@@ -17,7 +17,6 @@ module.exports = {
     filename: '[name].bundle.js',
     clean: true,
   },
-  // loaders
   module: {
     rules: [
       {
@@ -27,11 +26,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'eslint-loader'],
       },
     ],
   },
-  // plugins
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Bootcamp Homework 2',
